@@ -29,6 +29,7 @@ export default function DevisPage() {
   const [step, setStep] = useState(1);
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
   // État du formulaire
   const [formData, setFormData] = useState({
@@ -56,15 +57,31 @@ export default function DevisPage() {
     setStep((prev) => prev - 1);
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
+    setErrorMessage(null);
 
-    // Simulation d'envoi API
-    setTimeout(() => {
+    try {
+      const response = await fetch("/api/devis", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setSubmitted(true);
+      } else {
+        const errorData = await response.json();
+        setErrorMessage(
+          errorData.error || "Une erreur est survenue lors de l'envoi."
+        );
+      }
+    } catch (err) {
+      setErrorMessage("Une erreur réseau est survenue. Veuillez réanalyser votre connexion.");
+    } finally {
       setLoading(false);
-      setSubmitted(true);
-    }, 1200);
+    }
   };
 
   return (
@@ -137,6 +154,11 @@ export default function DevisPage() {
             </div>
 
             <form onSubmit={handleSubmit} className="p-6 sm:p-10 space-y-8">
+              {errorMessage && (
+                <div className="p-4 bg-red-50 border border-red-200 rounded-xl text-red-600 text-sm">
+                  {errorMessage}
+                </div>
+              )}
               
               {/* ÉTAPE 1 : Choix du service */}
               {step === 1 && (
@@ -361,7 +383,7 @@ export default function DevisPage() {
 
                     <button
                       type="submit"
-                      disabled={loading || !formData.nom || !formData.telephone}
+                      disabled={loading || !formData.nom || !formData.telephone || !formData.codePostal}
                       className="bg-amber-500 hover:bg-amber-400 disabled:opacity-50 text-slate-950 font-extrabold px-8 py-3.5 rounded-xl transition text-sm shadow-md"
                     >
                       {loading ? "Envoi en cours..." : "Envoyer ma demande de devis"}

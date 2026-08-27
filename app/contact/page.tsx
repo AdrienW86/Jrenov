@@ -17,16 +17,41 @@ const COMMUNES_RHONE = [
 export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
+    setErrorMessage(null);
 
-    // Simulation d'envoi du formulaire
-    setTimeout(() => {
+    const formData = new FormData(e.currentTarget);
+    const body = {
+      nom: formData.get("nom"),
+      telephone: formData.get("telephone"),
+      email: formData.get("email"),
+      ville: formData.get("ville"),
+      sujet: formData.get("sujet"),
+      message: formData.get("message"),
+    };
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(body),
+      });
+
+      if (response.ok) {
+        setSubmitted(true);
+      } else {
+        const errorData = await response.json();
+        setErrorMessage(errorData.error || "Une erreur est survenue lors de l'envoi.");
+      }
+    } catch (err) {
+      setErrorMessage("Une erreur réseau est survenue. Veuillez réessayer.");
+    } finally {
       setLoading(false);
-      setSubmitted(true);
-    }, 1000);
+    }
   };
 
   return (
@@ -64,6 +89,12 @@ export default function ContactPage() {
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-4">
+                {errorMessage && (
+                  <div className="p-3 bg-red-50 border border-red-200 rounded-lg text-red-600 text-sm">
+                    {errorMessage}
+                  </div>
+                )}
+
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div>
                     <label htmlFor="nom" className="block text-xs font-bold text-slate-700 uppercase mb-1">
@@ -72,6 +103,7 @@ export default function ContactPage() {
                     <input
                       type="text"
                       id="nom"
+                      name="nom"
                       required
                       placeholder="Jean Dupont"
                       className="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-amber-500/50 focus:border-amber-500 text-sm"
@@ -84,6 +116,7 @@ export default function ContactPage() {
                     <input
                       type="tel"
                       id="telephone"
+                      name="telephone"
                       required
                       placeholder="06 00 00 00 00"
                       className="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-amber-500/50 focus:border-amber-500 text-sm"
@@ -99,6 +132,7 @@ export default function ContactPage() {
                     <input
                       type="email"
                       id="email"
+                      name="email"
                       placeholder="exemple@domaine.fr"
                       className="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-amber-500/50 focus:border-amber-500 text-sm"
                     />
@@ -110,6 +144,7 @@ export default function ContactPage() {
                     <input
                       type="text"
                       id="ville"
+                      name="ville"
                       placeholder="69003 Lyon"
                       className="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-amber-500/50 focus:border-amber-500 text-sm"
                     />
@@ -122,6 +157,7 @@ export default function ContactPage() {
                   </label>
                   <select
                     id="sujet"
+                    name="sujet"
                     required
                     className="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-amber-500/50 focus:border-amber-500 text-sm bg-white"
                   >
@@ -141,6 +177,7 @@ export default function ContactPage() {
                   </label>
                   <textarea
                     id="message"
+                    name="message"
                     rows={4}
                     required
                     placeholder="Précisez votre besoin (fuite constatée, surface de la toiture, délais souhaités...)"
@@ -151,7 +188,7 @@ export default function ContactPage() {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="w-full bg-amber-500 hover:bg-amber-400 text-slate-950 font-extrabold py-3.5 px-6 rounded-xl transition flex items-center justify-center gap-2"
+                  className="w-full bg-amber-500 hover:bg-amber-400 disabled:opacity-50 text-slate-950 font-extrabold py-3.5 px-6 rounded-xl transition flex items-center justify-center gap-2"
                 >
                   <Send className="w-4 h-4" />
                   {loading ? "Envoi en cours..." : "Envoyer le message"}
