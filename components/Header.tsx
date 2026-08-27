@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Phone, MapPin, Clock, Menu, X, ShieldCheck } from "lucide-react";
 
 const NAV_LINKS = [
@@ -44,20 +45,28 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           
-          {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
-            <div className="bg-amber-500 text-slate-950 font-black text-xl px-2.5 py-1 rounded">
-              J
-            </div>
-            <div className="flex flex-col">
-              <span className="text-2xl font-black tracking-tight text-slate-900 leading-none">
-                RENOV<span className="text-amber-500">.</span>
-              </span>
-              <span className="text-[10px] uppercase font-bold text-slate-500 tracking-wider">
-                Couverture & Zinguerie Lyon
-              </span>
-            </div>
-          </Link>
+  
+
+
+<Link href="/" className="flex items-center gap-2">
+  <div className="relative w-18 h-18 flex items-center justify-center">
+    <Image
+      src="/logo.png"
+      alt="Logo RENOV"
+      fill
+      className="object-contain"
+      priority
+    />
+  </div>
+  <div className="flex flex-col">
+    <span className="text-2xl font-black tracking-tight text-slate-900 leading-none">
+      RENOV<span className="text-amber-500">.</span>
+    </span>
+    <span className="text-[10px] uppercase font-bold text-slate-500 tracking-wider">
+      Couverture & Zinguerie Lyon
+    </span>
+  </div>
+</Link>
 
           {/* Nav Desktop */}
           <nav className="hidden lg:flex items-center gap-6">
