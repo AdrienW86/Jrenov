@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Header from "@/components/Header";
+import FacebookFeed from "@/components/FacebookFeed";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import "./globals.css";
@@ -25,6 +26,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Header />
         <Breadcrumb />
         <main className="flex-1">{children}</main>
+        <FacebookFeed />
         <Footer />
       </body>
     </html>

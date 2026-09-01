@@ -7,7 +7,7 @@
     "category": "Couverture",
     "summary": "Réfection totale de la toiture d'une maison de ville avec remplacement du pare-pluie et réfection de la zinguerie.",
     "description": "Le chantier consistait à remplacer une couverture centenaire devenue poreuse. Nous avons déposé l'ensemble des tuiles existantes, posé un écran de sous-toiture HPV haute performance et réinstallé des tuiles terre cuite Ste Foy. L'étanchéité des rives et de la cheminée a été refaite à neuf en zinc.",
-    "image": "/images/realisations/villeurbanne-1.jpg",
+    "image": "/images/realisations/tuiles.jpg",
     "duration": "5 jours"
   },
   {
@@ -18,7 +18,227 @@
     "category": "Zinguerie",
     "summary": "Remplacement complet des gouttières nantaises fuyardes et habillage des bandeaux en aluminium.",
     "description": "Intervention d'urgence suite à des infiltrations le long du mur de façade. Nous avons façonné sur-mesure des chéneaux en zinc de 0,65 mm et posé un habillage alu pour supprimer l'entretien des bois de rive.",
-    "image": "/images/realisations/ecully-1.jpg",
+    "image": "/images/realisations/gouttieres.jpg",
     "duration": "2 jours"
+  },
+  {
+    "slug": "demoussage-traitement-hydrofuge-tassin",
+    "title": "Démoussage et traitement hydrofuge de toiture",
+    "city": "Tassin-la-Demi-Lune (69160)",
+    "date": "Février 2026",
+    "category": "Entretien",
+    "summary": "Nettoyage complet d'une toiture en tuiles romanes avec application d'un hydrofuge coloré préventif.",
+    "description": "Toiture fortement envahie par la mousse et les lichens. Nous avons réalisé un nettoyage à pression modérée, appliqué un traitement fongicide curatif, puis pulvérisé un hydrofuge effet perlant pour imperméabiliser les tuiles.",
+    "image": "/images/realisations/demoussage.jpg",
+    "duration": "2 jours"
+  },
+  {
+    "slug": "isolation-sarking-toiture-caluire",
+    "title": "Isolation thermique de toiture par l'extérieur (Sarking)",
+    "city": "Caluire-et-Cuire (69300)",
+    "date": "Mars 2026",
+    "category": "Isolation",
+    "summary": "Isolation sous tuiles en fibre de bois haute densité sans perte d'espace dans les combles.",
+    "description": "Rénovation énergétique globale. Dépose de la couverture, pose de panneaux rigides de fibre de bois de 160 mm sur chevrons, puis repose d'une couverture neuve pour garantir un confort thermique été comme hiver.",
+    "image": "/images/realisations/isolation2.jpg",
+    "duration": "7 jours"
+  },
+  {
+    "slug": "pose-fenetres-toit-velux-craponne",
+    "title": "Création et installation de fenêtres de toit Velux",
+    "city": "Craponne (69290)",
+    "date": "Mars 2026",
+    "category": "Fenêtre de toit",
+    "summary": "Création de deux chevêtres et pose de Velux Tout Confort avec volets roulants solaires.",
+    "description": "Aménagement des combles perdus. Ouverture de la charpente, pose des fenêtres de toit grand format avec vitrage à contrôle solaire, et raccordements d'étanchéité en zinc sur tuiles béton.",
+    "image": "/images/realisations/velux.jpg",
+    "duration": "2 jours"
+  },
+  {
+    "slug": "refection-etancheite-toit-terrasse-lyon-6",
+    "title": "Étanchéité bitumineuse d'un toit-terrasse",
+    "city": "Lyon 6e (69006)",
+    "date": "Avril 2026",
+    "category": "Étanchéité",
+    "summary": "Réfection intégrale du complexe d'étanchéité d'un toit-terrasse inaccessible.",
+    "description": "Suite à des infiltrations dans les derniers étages, nous avons déposé l'ancien revêtement, posé un pare-vapeur, un isolant polyuréthane de 120 mm et une étanchéité bicouche élastomère soudée au chalumeau.",
+    "image": "/images/realisations/etancheite.jpg",
+    "duration": "4 jours"
+  },
+  {
+    "slug": "renovation-toiture-ardoise-ste-foy",
+    "title": "Réfection de couverture en ardoise naturelle",
+    "city": "Sainte-Foy-lès-Lyon (69110)",
+    "date": "Avril 2026",
+    "category": "Couverture",
+    "summary": "Remplacement d'une couverture en ardoise sur une maison de maître avec crochets inox.",
+    "description": "Dépose des ardoises dégradées, pose d'un écran de sous-toiture respirant et litonnage neuf. Pose au crochet d'ardoises d'Espagne de qualité supérieure et réfection des entourages de lucarnes.",
+    "image": "/images/realisations/ardoise.jpg",
+    "duration": "8 jours"
+  },
+  {
+    "slug": "reparation-fuite-cheminee-brignais",
+    "title": "Réfection d'étanchéité d'abergement de cheminée",
+    "city": "Brignais (69530)",
+    "date": "Mai 2026",
+    "category": "Zinguerie",
+    "summary": "Recherche de fuite et façonnage d'un abergement de cheminée sur-mesure en zinc.",
+    "description": "Infiltration d'eau au niveau du pied de cheminée. Nous avons retiré le mortier fissuré pour façonner et souder un abergement complet en zinc sur-mesure, garanti anticorrosion.",
+    "image": "/images/realisations/fuite.jpg",
+    "duration": "1 jour"
+  },
+  {
+    "slug": "habillage-bandeaux-rive-alu-meyzieu",
+    "title": "Habillage de bandeaux et sous-faces en aluminium",
+    "city": "Meyzieu (69330)",
+    "date": "Mai 2026",
+    "category": "Zinguerie",
+    "summary": "Protection durable des bois de rive avec habillage alu thermolaqué sans entretien.",
+    "description": "Remplacement des planches de rive pourries. Pose d'un habillage de sous-face et de bandeaux en aluminium gris anthracite pour harmoniser avec la façade et supprimer tout besoin de peinture.",
+    "image": "/images/realisations/bandeau.jpg",
+    "duration": "3 jours"
+  },
+  {
+    "slug": "traitement-charpente-bois-saint-priest",
+    "title": "Traitement curatif et préventif de charpente",
+    "city": "Saint-Priest (69800)",
+    "date": "Juin 2026",
+    "category": "Charpente",
+    "summary": "Injection en profondeur et pulvérisation contre les insectes xylophages (vrillettes).",
+    "description": "Intervention dans les combles perdus suite à la détection de sciure. Brossage des bois, perçage, pose de injecteurs autonomes et traitement sous pression du cœur des pannes et chevrons.",
+    "image": "/images/realisations/charpente.jpg",
+    "duration": "2 jours"
+  },
+  {
+    "slug": "remplacement-tuiles-cassées-orage-venissieux",
+    "title": "Mise hors d'eau et réfection suite aux intempéries",
+    "city": "Vénissieux (69200)",
+    "date": "Juin 2026",
+    "category": "Urgence",
+    "summary": "Intervention d'urgence après un violent orage de grêle sur un bâtiment professionnel.",
+    "description": "Bâchage d'urgence sous 12h suite à la cassure de nombreuses tuiles. Remplacement de 150 tuiles plate de Marseille et consolidation des fixations du faîtage.",
+    "image": "/images/realisations/tempete.jpg",
+    "duration": "2 jours"
+  },
+  {
+    "slug": "creation-verrière-toit-lyon-3",
+    "title": "Pose d'une verrière d'atelier en toiture",
+    "city": "Lyon 3e (69003)",
+    "date": "Juin 2026",
+    "category": "Fenêtre de toit",
+    "summary": "Installation d'une verrière 3 modules pour une luminosité maximale dans un atelier d'artiste.",
+    "description": "Renforcement de la charpente bois, découpe de la couverture et intégration d'un ensemble de trois verrières juxtaposées avec raccordements d'étanchéité spécifiques en plomb et zinc.",
+    "image": "/images/realisations/verriere2.jpg",
+    "duration": "3 jours"
+  },
+  {
+    "slug": "renovation-faitage-a-sec-fontaines-sur-saone",
+    "title": "Rénovation de faîtage avec closoir ventilé",
+    "city": "Fontaines-sur-Saône (69270)",
+    "date": "Juillet 2026",
+    "category": "Couverture",
+    "summary": "Remplacement d'un ancien faîtage scellé au mortier par une pose à sec plus durable.",
+    "description": "Le faîtage en mortier tombait en ruine. Dépose des faîtières, pose d'une lisse de rehausse, installation d'un closoir ventilé en aluminium et refixation mécanique des tuiles faîtières.",
+    "image": "/images/realisations/faitage.jpg",
+    "duration": "2 jours"
+  },
+  {
+    "slug": "pose-gouttieres-alu-sur-mesure-dagneux",
+    "title": "Fabrication et pose de gouttières aluminium en continu",
+    "city": "Dagneux (01120)",
+    "date": "Juillet 2026",
+    "category": "Zinguerie",
+    "summary": "Profilage sur chantier de gouttières alu sans soudure ni raccord.",
+    "description": "Installation d'un réseau complet d'évacuation d'eau pluviale. Profilage directement sur place des gouttières de forme corniche couleur terre cuite pour s'intégrer parfaitement à la villa.",
+    "image": "/images/realisations/aluminium.jpg",
+    "duration": "1 jour"
+  },
+  {
+    "slug": "isolation-combles-perdus-laine-roche-chassieu",
+    "title": "Isolation des combles perdus par soufflage",
+    "city": "Chassieu (69680)",
+    "date": "Juillet 2026",
+    "category": "Isolation",
+    "summary": "Soufflage de laine de roche mécanisée pour un confort thermique immédiat.",
+    "description": "Évacuation de l'ancienne laine de verre tassée, pose d'un pige de hauteur, repérage du réseau électrique et soufflage d'une épaisseur de 35 cm de laine de roche (R=8 m².K/W).",
+    "image": "/images/realisations/soufflage.jpg",
+    "duration": "1 jour"
+  },
+  {
+    "slug": "renovation-toiture-tuiles-plat-champagne-au-mont-d-or",
+    "title": "Réfection haut de gamme en tuiles plates",
+    "city": "Champagne-au-Mont-d'Or (69410)",
+    "date": "Août 2026",
+    "category": "Couverture",
+    "summary": "Rénovation d'une couverture complexe à pentes raides en tuiles plates de pays.",
+    "description": "Dépose méticuleuse de la toiture existante. Pose d'un écran pare-pluie respirant, double liteonnage et alignement au cordeau de tuiles plates. Finition des noues et solins en zinc façonné.",
+    "image": "/images/realisations/tuiles-plates.jpg",
+    "duration": "10 jours"
+  },
+  {
+    "slug": "refection-noue-zinc-francheville",
+    "title": "Remplacement d'une noue métallique d'étanchéité",
+    "city": "Francheville (69340)",
+    "date": "Août 2026",
+    "category": "Zinguerie",
+    "summary": "Remplacement d'une noue percée à la jonction de deux pans de toit.",
+    "description": "Suite à une fuite au creux du toit, dépose des tuiles de rives, retrait de l'ancienne noue rouillée et pose d'une couloir de noue en zinc à pince de 500 mm d'élargissement.",
+    "image": "/images/realisations/noue.jpg",
+    "duration": "2 jours"
+  },
+  {
+    "slug": "demoussage-toiture-ecologique-genas",
+    "title": "Nettoyage de toiture écologique avec traitement bionettoyant",
+    "city": "Genas (69740)",
+    "date": "Août 2026",
+    "category": "Entretien",
+    "summary": "Démoussage basse pression et application d’un produit d'origine végétale.",
+    "description": "Nettoyage complet des tuiles romanes envahies de végétation sans dégrader le matériau. Application d'un traitement décontaminant d'origine végétale bio-assimilable respectueux de l'environnement.",
+    "image": "/images/realisations/nettoyage.jpg",
+    "duration": "2 jours"
+  },
+  {
+    "slug": "reparation-charpente-lambourde-oullins",
+    "title": "Renforcement et reprise partielle de charpente",
+    "city": "Oullins (69600)",
+    "date": "Août 2026",
+    "category": "Charpente",
+    "summary": "Changement de chevrons affaissés et moisage de pannes en bois de charpente.",
+    "description": "Reprise d'une charpente fragilisée par une ancienne fuite. Dépose locale de la couverture, découpe des pièces de bois abîmées, moisage avec des bastings neufs et traitement insecticide.",
+    "image": "/images/realisations/reparation.jpg",
+    "duration": "3 jours"
+  },
+  {
+    "slug": "remplacement-velux-ancien-decines",
+    "title": "Remplacement standard de 3 fenêtres de toit",
+    "city": "Décines-Charpieu (69150)",
+    "date": "Septembre 2026",
+    "category": "Fenêtre de toit",
+    "summary": "Dépose de vieux Velux en bois et pose de modèles neufs en polyuréthane blanc sans entretien.",
+    "description": "Remplacement rapide sans détérioration des finitions intérieures. Raccordement sur tuiles mécaniques avec jupes d'étanchéité souples pour une isolation phonique et thermique accrue.",
+    "image": "/images/realisations/3velux2.jpg",
+    "duration": "1 jour"
+  },
+  {
+    "slug": "refection-solins-etancheite-lyon-5",
+    "title": "Réfection des solins et bandeaux d'étanchéité en plomb",
+    "city": "Lyon 5e (69005)",
+    "date": "Septembre 2026",
+    "category": "Zinguerie",
+    "summary": "Reprise de l'étanchéité contre mur mitoyen avec bandes de plomb et engravure.",
+    "description": "Intervention sur une maison de ville historique. Réalisation d'une engravure dans le mur de façade, pose d'un solin en plomb plissé et étanchéité par mastic polyuréthane haute résistance.",
+    "image": "/images/realisations/solin.jpg",
+    "duration": "2 jours"
+  },
+  {
+    "slug": "renovation-toiture-garages-corbas",
+    "title": "Réfection de toiture bac acier sur dépendance",
+    "city": "Corbas (69960)",
+    "date": "Septembre 2026",
+    "category": "Couverture",
+    "summary": "Pose de plaques bac acier anti-condensation sur une toiture de garage.",
+    "description": "Remplacement d'une ancienne couverture amiantée (déposée par entreprise agréée). Pose de tôles bac acier isolées avec feutre régulateur de condensation et rives de finition thermolaquées.",
+    "image": "/images/realisations/acier.jpg",
+    "duration": "3 jours"
   }
 ]
