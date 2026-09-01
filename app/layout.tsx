@@ -13,6 +13,9 @@ export const metadata: Metadata = {
   title: "Jrenov - Couvreur Zingueur à Lyon (69) | Rénovation & Urgence Toiture",
   description:
     "Artisan couvreur-zingueur à Lyon et sa métropole. Travaux de couverture, recherche de fuite, isolation et nettoyage de toiture. Devis gratuit au 04 65 84 88 85.",
+  verification: {
+    google: "CDiAmQ2IJErLnLF6rShtnkzOSJBZguHs8_7oX9ZxyQQ",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
