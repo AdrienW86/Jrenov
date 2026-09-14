@@ -245,8 +245,8 @@ export default function ContactPage() {
                   <Mail className="w-4 h-4 text-amber-600 shrink-0 mt-0.5" />
                   <div>
                     <span className="font-semibold text-slate-900 block">E-mail :</span>
-                    <a href="mailto:contact@jrenov.fr" className="hover:underline">
-                      contact@jrenov.fr
+                    <a href="mailto:contact@jrenov.com" className="hover:underline">
+                      contact@jrenov.com
                     </a>
                   </div>
                 </div>

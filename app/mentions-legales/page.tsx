@@ -40,7 +40,7 @@ export default function MentionsLegalesPage() {
             <p><span className="font-bold text-slate-900">Date d'immatriculation :</span> 07/05/2018</p>
             <p><span className="font-bold text-slate-900">Adresse du siège social :</span> 48 Ancien Chemin des Marais, 69150 Décines-Charpieu</p>
             <p><span className="font-bold text-slate-900">Téléphone :</span> 04 65 84 88 85</p>
-            <p><span className="font-bold text-slate-900">E-mail :</span> contact@jrenov.fr</p>
+            <p><span className="font-bold text-slate-900">E-mail :</span> contact@jrenov.com</p>
           </div>
         </section>
 
@@ -83,7 +83,7 @@ export default function MentionsLegalesPage() {
         <section className="space-y-3 text-sm text-slate-700">
           <h2 className="font-bold text-slate-900 text-base">6. Données personnelles</h2>
           <p>
-            Les informations recueillies via les formulaires de devis et de contact font l'objet d'un traitement informatique destiné exclusivement à la prise de rendez-vous et à la réalisation d'estimations tarifaires par l'entreprise JRENOV. Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez d'un droit d'accès, de rectification et de suppression de vos données personnelles sur simple demande par mail à <a href="mailto:contact@jrenov.fr" className="text-amber-600 hover:underline">contact@jrenov.fr</a>.
+            Les informations recueillies via les formulaires de devis et de contact font l'objet d'un traitement informatique destiné exclusivement à la prise de rendez-vous et à la réalisation d'estimations tarifaires par l'entreprise JRENOV. Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez d'un droit d'accès, de rectification et de suppression de vos données personnelles sur simple demande par mail à <a href="mailto:contact@jrenov.com" className="text-amber-600 hover:underline">contact@jrenov.fr</a>.
           </p>
         </section>
 
